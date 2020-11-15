@@ -1,0 +1,124 @@
+.Sidebar {
+  background: #181818;
+  width: 120px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.Icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60%;
+  padding: 12px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.Icon-style {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  position: relative;
+  align-items: center;
+}
+
+.Icon-style:hover {
+  color: #69c9d0;
+  cursor: pointer;
+}
+
+.Burger-menu {
+  display: none;
+}
+
+.Navbar {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .Sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    min-height: 0;
+  }
+
+  .Icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .Icon-container {
+    display: none;
+  }
+
+  .Burger-menu {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 60%;
+    padding: 12px;
+    position: relative;
+    top: 50%;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  .Burger-menu:hover {
+    color: #69c9d0;
+    cursor: pointer;
+  }
+
+  .Navbar {
+    background: #181818;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    min-height: 100px;
+    color: white;
+    transition: all 0.3s ease-out;
+  }
+
+  .Icon-container-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 12px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
