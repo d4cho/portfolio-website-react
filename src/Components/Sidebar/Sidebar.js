@@ -9,6 +9,9 @@ import {
   AiOutlineMail,
   AiOutlineMenu
 } from 'react-icons/ai';
+import logo from '../../Assets/logo.png';
+
+import './Sidebar.css';
 
 const Sidebar = () => {
   const [showNavbar, setShowNavbar] = useState(false);

@@ -1,3 +1,11 @@
+.Logo {
+  position: absolute;
+  width: 120px;
+  background-color: black;
+  align-self: center;
+  padding: 12px 0;
+}
+
 .Sidebar {
   background: #181818;
   width: 120px;
@@ -47,6 +55,14 @@
 }
 
 @media (max-width: 960px) {
+  .Logo {
+    position: absolute;
+    width: 75px;
+    background-color: black;
+    align-self: center;
+    padding: 12px 0;
+  }
+
   .Sidebar {
     flex-direction: row;
     width: 100%;
