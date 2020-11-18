@@ -702,7 +702,18 @@
   color: #69c9d0;
 }
 
+.Heading-animated-red {
+  font-weight: 700;
+  color: #d07069;
+}
+
 .Heading-animated:hover {
+  animation-name: animation; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  cursor: default;
+}
+
+.Heading-animated-red:hover {
   animation-name: animation; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
   cursor: default;
