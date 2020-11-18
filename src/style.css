@@ -689,3 +689,31 @@
   color: #d07069;
   cursor: default;
 }
+
+/* About me Page */
+
+.About-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Heading-animated {
+  font-weight: 700;
+  color: #69c9d0;
+}
+
+.Heading-animated:hover {
+  animation-name: animation; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  cursor: default;
+}
+
+.About-me-p-container {
+  width: 60%;
+}
+
+.About-me-p {
+  font-size: 1rem;
+  color: white;
+  margin-left: 1rem;
+}
