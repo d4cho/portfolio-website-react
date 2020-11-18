@@ -6,40 +6,40 @@ const HomePage = () => {
     <div className='Background'>
       <div className='Main'>
         <div className='Greeting'>
-          <div className='Greeting-child'>
-            <div className='Text-animated'>H</div>
-            <div className='Text-animated'>i</div>
-            <div className='Text-animated'>,</div>
-          </div>
-          <div className='Greeting-child'>
-            <div className='Text-animated'>I</div>
-            <div className='Text-animated'>'</div>
-            <div className='Text-animated'>m</div>
-            &nbsp;
-            <div className='Text-animated'>D</div>
-            <div className='Text-animated'>a</div>
-            <div className='Text-animated'>n</div>
-            <div className='Text-animated'>i</div>
-            <div className='Text-animated'>e</div>
-            <div className='Text-animated'>l</div>
-            <div className='Text-animated'>,</div>
-          </div>
-          <div className='Greeting-child'>
-            <div className='Text-animated'>w</div>
-            <div className='Text-animated'>e</div>
-            <div className='Text-animated'>b</div>
-            &nbsp;
-            <div className='Text-animated'>d</div>
-            <div className='Text-animated'>e</div>
-            <div className='Text-animated'>v</div>
-            <div className='Text-animated'>e</div>
-            <div className='Text-animated'>l</div>
-            <div className='Text-animated'>o</div>
-            <div className='Text-animated'>p</div>
-            <div className='Text-animated'>e</div>
-            <div className='Text-animated'>r</div>
-            <div className='Text-animated'>.</div>
-          </div>
+          <span className='Greeting-child'>
+            <span className='Text-animated'>H</span>
+            <span className='Text-animated'>i</span>
+            <span className='Text-animated-special'>,</span>
+          </span>
+          <span className='Greeting-child'>
+            <span className='Text-animated'>I</span>
+            <span className='Text-animated-special'>'</span>
+            <span className='Text-animated'>m</span>
+            <span className='Text-animated'>&nbsp;</span>
+            <span className='Text-animated-special'>D</span>
+            <span className='Text-animated'>a</span>
+            <span className='Text-animated'>n</span>
+            <span className='Text-animated'>i</span>
+            <span className='Text-animated'>e</span>
+            <span className='Text-animated'>l</span>
+            <span className='Text-animated-special'>,</span>
+          </span>
+          <span className='Greeting-child'>
+            <span className='Text-animated'>w</span>
+            <span className='Text-animated'>e</span>
+            <span className='Text-animated'>b</span>
+            <span className='Text-animated'>&nbsp;</span>
+            <span className='Text-animated'>d</span>
+            <span className='Text-animated'>e</span>
+            <span className='Text-animated'>v</span>
+            <span className='Text-animated'>e</span>
+            <span className='Text-animated'>l</span>
+            <span className='Text-animated'>o</span>
+            <span className='Text-animated'>p</span>
+            <span className='Text-animated'>e</span>
+            <span className='Text-animated'>r</span>
+            <span className='Text-animated-special'>.</span>
+          </span>
         </div>
         <br />
         <div className='Title'>React Developer / Full Stack</div>
