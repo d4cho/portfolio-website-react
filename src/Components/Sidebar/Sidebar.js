@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -11,8 +11,13 @@ import {
 } from 'react-icons/ai';
 import logo from '../../Assets/logo.png';
 
-const ICON_SIZE = {
+const ICON_STYLE = {
   fontSize: '2rem'
+};
+
+const ICON_STYLE_CURRENT = {
+  fontSize: '2rem',
+  color: '#69c9d0'
 };
 
 const Sidebar = () => {
@@ -66,7 +71,13 @@ const Sidebar = () => {
               onMouseEnter={iconHoverTrueHandler}
               onMouseLeave={iconHoverFalseHandler}
               id='home'>
-              {isHomeHover ? <p>HOME</p> : <AiOutlineHome style={ICON_SIZE} />}
+              {isHomeHover ? (
+                <p>HOME</p>
+              ) : window.location.pathname === '/' ? (
+                <AiOutlineHome style={ICON_STYLE_CURRENT} />
+              ) : (
+                <AiOutlineHome style={ICON_STYLE} />
+              )}
             </div>
           </Link>
           <Link to='/about' style={{ textDecoration: 'none' }}>
@@ -77,8 +88,10 @@ const Sidebar = () => {
               id='about'>
               {isAboutHover ? (
                 <p>ABOUT</p>
+              ) : window.location.pathname === '/about' ? (
+                <AiOutlineUser style={ICON_STYLE_CURRENT} />
               ) : (
-                <AiOutlineUser style={ICON_SIZE} />
+                <AiOutlineUser style={ICON_STYLE} />
               )}
             </div>
           </Link>
@@ -90,8 +103,10 @@ const Sidebar = () => {
               id='skills'>
               {isSkillsHover ? (
                 <p>SKILLS</p>
+              ) : window.location.pathname === '/skills' ? (
+                <AiOutlineUnorderedList style={ICON_STYLE_CURRENT} />
               ) : (
-                <AiOutlineUnorderedList style={ICON_SIZE} />
+                <AiOutlineUnorderedList style={ICON_STYLE} />
               )}
             </div>
           </Link>
@@ -103,8 +118,10 @@ const Sidebar = () => {
               id='projects'>
               {isProjectsHover ? (
                 <p>PROJECTS</p>
+              ) : window.location.pathname === '/projects' ? (
+                <AiOutlineAppstore style={ICON_STYLE_CURRENT} />
               ) : (
-                <AiOutlineAppstore style={ICON_SIZE} />
+                <AiOutlineAppstore style={ICON_STYLE} />
               )}
             </div>
           </Link>
@@ -116,14 +133,16 @@ const Sidebar = () => {
               id='contact'>
               {isContactHover ? (
                 <p>CONTACT</p>
+              ) : window.location.pathname === '/contact' ? (
+                <AiOutlineMail style={ICON_STYLE_CURRENT} />
               ) : (
-                <AiOutlineMail style={ICON_SIZE} />
+                <AiOutlineMail style={ICON_STYLE} />
               )}
             </div>
           </Link>
         </div>
         <div className='Burger-menu'>
-          <AiOutlineMenu style={ICON_SIZE} onClick={showNavbarHandler} />
+          <AiOutlineMenu style={ICON_STYLE} onClick={showNavbarHandler} />
         </div>
       </div>
       {showNavbar && (
@@ -137,8 +156,10 @@ const Sidebar = () => {
                 id='home'>
                 {isHomeHover ? (
                   <p>HOME</p>
+                ) : window.location.pathname === '/' ? (
+                  <AiOutlineHome style={ICON_STYLE_CURRENT} />
                 ) : (
-                  <AiOutlineHome style={ICON_SIZE} />
+                  <AiOutlineHome style={ICON_STYLE} />
                 )}
               </div>
             </Link>
@@ -150,8 +171,10 @@ const Sidebar = () => {
                 id='about'>
                 {isAboutHover ? (
                   <p>ABOUT</p>
+                ) : window.location.pathname === '/about' ? (
+                  <AiOutlineUser style={ICON_STYLE_CURRENT} />
                 ) : (
-                  <AiOutlineUser style={ICON_SIZE} />
+                  <AiOutlineUser style={ICON_STYLE} />
                 )}
               </div>
             </Link>
@@ -163,8 +186,10 @@ const Sidebar = () => {
                 id='skills'>
                 {isSkillsHover ? (
                   <p>SKILLS</p>
+                ) : window.location.pathname === '/skills' ? (
+                  <AiOutlineUnorderedList style={ICON_STYLE_CURRENT} />
                 ) : (
-                  <AiOutlineUnorderedList style={ICON_SIZE} />
+                  <AiOutlineUnorderedList style={ICON_STYLE} />
                 )}
               </div>
             </Link>
@@ -176,8 +201,10 @@ const Sidebar = () => {
                 id='projects'>
                 {isProjectsHover ? (
                   <p>PROJECTS</p>
+                ) : window.location.pathname === '/projects' ? (
+                  <AiOutlineAppstore style={ICON_STYLE_CURRENT} />
                 ) : (
-                  <AiOutlineAppstore style={ICON_SIZE} />
+                  <AiOutlineAppstore style={ICON_STYLE} />
                 )}
               </div>
             </Link>
@@ -189,8 +216,10 @@ const Sidebar = () => {
                 id='contact'>
                 {isContactHover ? (
                   <p>CONTACT</p>
+                ) : window.location.pathname === '/contact' ? (
+                  <AiOutlineMail style={ICON_STYLE_CURRENT} />
                 ) : (
-                  <AiOutlineMail style={ICON_SIZE} />
+                  <AiOutlineMail style={ICON_STYLE} />
                 )}
               </div>
             </Link>
