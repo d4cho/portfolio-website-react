@@ -36,7 +36,21 @@ const SkillsPage = () => {
             <p className='About-me-p'>
               Experienced with MERN stack applications.
             </p>
-            <p className='About-me-p'>Check out my github or contact me.</p>
+            <p className='About-me-p'>
+              Check out my{' '}
+              {
+                <a href='https://github.com/d4cho' style={{ color: '#69c9d0' }}>
+                  github
+                </a>
+              }{' '}
+              or{' '}
+              {
+                <Link to='/contact' style={{ color: '#69c9d0' }}>
+                  contact
+                </Link>
+              }{' '}
+              me.
+            </p>
           </div>
         </div>
         <br />
