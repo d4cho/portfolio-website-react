@@ -36,7 +36,7 @@
 }
 
 .Icon-style:hover {
-  color: #69c9d0;
+  color: #08fdd8;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@
   }
 
   .Burger-menu:hover {
-    color: #69c9d0;
+    color: #08fdd8;
     cursor: pointer;
   }
 
@@ -187,15 +187,15 @@
 
 .Contact {
   font-size: 1.5rem;
-  color: #69c9d0;
-  border: solid #69c9d0 1px;
+  color: #08fdd8;
+  border: solid #08fdd8 1px;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
 
 .Contact:hover {
   color: #262626;
-  background-color: #69c9d0;
+  background-color: #08fdd8;
 }
 
 @keyframes tada {
@@ -675,7 +675,7 @@
 .Text-animated:hover {
   animation-name: animation; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
-  color: #69c9d0;
+  color: #08fdd8;
   cursor: default;
 }
 
@@ -686,7 +686,7 @@
 .Text-animated-special:hover {
   animation-name: animation; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-  color: #d07069;
+  color: #fd082d;
   cursor: default;
 }
 
@@ -699,12 +699,12 @@
 
 .Heading-animated {
   font-weight: 700;
-  color: #69c9d0;
+  color: #08fdd8;
 }
 
 .Heading-animated-red {
   font-weight: 700;
-  color: #d07069;
+  color: #fd082d;
 }
 
 .Heading-animated:hover {

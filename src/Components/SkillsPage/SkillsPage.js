@@ -39,13 +39,13 @@ const SkillsPage = () => {
             <p className='About-me-p'>
               Check out my{' '}
               {
-                <a href='https://github.com/d4cho' style={{ color: '#69c9d0' }}>
+                <a href='https://github.com/d4cho' style={{ color: '#08fdd8' }}>
                   github
                 </a>
               }{' '}
               or{' '}
               {
-                <Link to='/contact' style={{ color: '#69c9d0' }}>
+                <Link to='/contact' style={{ color: '#08fdd8' }}>
                   contact
                 </Link>
               }{' '}
