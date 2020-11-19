@@ -45,7 +45,7 @@ const HomePage = () => {
         <div className='Title'>React Developer / Full Stack</div>
         <br />
         <br />
-        <Link to='/loading' style={{ textDecoration: 'none' }}>
+        <Link to='/contact' style={{ textDecoration: 'none' }}>
           <div className='Contact'>Contact me!</div>
         </Link>
       </div>
