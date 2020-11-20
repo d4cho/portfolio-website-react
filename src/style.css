@@ -728,3 +728,87 @@
   color: white;
   margin-left: 1rem;
 }
+
+/* Skills Page */
+.Background-skills-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-skills-page {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3rem;
+  width: 24rem;
+}
+
+.Chart-skills-page {
+  width: 30rem;
+  height: 30rem;
+  margin-left: -3rem;
+}
+
+.Greeting-skills-page {
+  font-size: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 24rem;
+}
+
+.Greeting-child-skills-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 17rem;
+}
+
+@media (max-width: 1440px) {
+  .Chart-skills-page {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Chart-skills-page {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .Main-skills-page {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .Background-skills-page {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .Chart-skills-page {
+    width: 25rem;
+    height: 15rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .Greeting-skills-page {
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .Greeting-child-skills-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+}

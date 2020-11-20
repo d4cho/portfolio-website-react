@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SkillsGraph from './sections/SkillsGraph';
+
 const SkillsPage = () => {
   return (
-    <div className='Background'>
-      <div className='Main'>
-        <div className='Greeting'>
-          <span className='Greeting-child'>
+    <div className='Background-skills-page'>
+      <div className='Main-skills-page'>
+        <div className='Greeting-skills-page'>
+          <span className='Greeting-child-skills-page'>
             <span className='Heading-animated'>S</span>
             <span className='Heading-animated'>k</span>
             <span className='Heading-animated'>i</span>
@@ -16,7 +18,7 @@ const SkillsPage = () => {
             <span className='Heading-animated'>&nbsp;</span>
             <span className='Heading-animated-red'>&amp;</span>
           </span>
-          <span className='Greeting-child'>
+          <span className='Greeting-child-skills-page'>
             <span className='Heading-animated'>E</span>
             <span className='Heading-animated'>x</span>
             <span className='Heading-animated'>p</span>
@@ -58,6 +60,9 @@ const SkillsPage = () => {
         <Link to='/projects' style={{ textDecoration: 'none' }}>
           <div className='Contact'>My work</div>
         </Link>
+      </div>
+      <div className='Chart-skills-page'>
+        <SkillsGraph />
       </div>
     </div>
   );
