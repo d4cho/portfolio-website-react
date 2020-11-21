@@ -839,6 +839,16 @@
   padding: 2rem;
 }
 
+@media (max-width: 960px) {
+  .Map-contact-page {
+    display: none;
+  }
+
+  .Content-contact-page {
+    width: 90%;
+  }
+}
+
 .Title-contact-page {
   display: flex;
   flex-direction: row;
@@ -859,5 +869,76 @@
 
 .Blurb-contact-page {
   color: white;
-  padding: 2rem 0;
+  padding: 1rem 0;
+}
+
+/* Form css */
+
+.Container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Name-email-container {
+  display: flex;
+}
+
+.Input-form {
+  width: 100%;
+  border: 0;
+  background: #363636;
+  height: 3rem;
+  font-size: 1rem;
+  color: #8d8d8d;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.Input-form:focus {
+  transition: all 0.5s;
+  border-bottom: 0.3rem solid #08fdd8;
+}
+
+/* .Input-form:invalid {
+  transition: all 0.5s;
+  border-bottom: 0.3rem solid red;
+} */
+
+.Input-form-message {
+  width: 100%;
+  border: 0;
+  background: #363636;
+  font-size: 1rem;
+  height: 6rem;
+  color: #8d8d8d;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.Input-form-message:focus {
+  transition: all 0.5s;
+  border-bottom: 0.2rem solid #08fdd8;
+}
+
+.Input-container-form {
+  width: 100%;
+  margin: 0.2rem 0.1rem;
+}
+
+.Submit-button-form {
+  align-self: flex-end;
+  background-color: #262626;
+  font-size: 1rem;
+  color: #08fdd8;
+  border: solid #08fdd8 1px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.Submit-button-form:hover {
+  background-color: #08fdd8;
+  color: #262626;
 }

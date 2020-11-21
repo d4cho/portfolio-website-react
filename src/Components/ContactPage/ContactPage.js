@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Form from './sections/Form';
+// import Map from './sections/Map';
 
 const ContactPage = () => {
   return (
@@ -19,9 +20,12 @@ const ContactPage = () => {
           <span className='Text-animated-contact-page'>e</span>
         </span>
         <p className='Blurb-contact-page'>
-          Feel free to contact me at danielcho91@gmail.com or call me at
-          647-323-1202. If you have other requests or questions, don't hesitate
-          to contact me using the form below.
+          Feel free to{' '}
+          <a href='mailto:danielcho91@gmail.com' style={{ color: '#08fdd8' }}>
+            email me
+          </a>{' '}
+          or call me at 647-323-1202. If you have other requests or questions,
+          don't hesitate to contact me using the form below.
         </p>
         <div>
           <Form />
