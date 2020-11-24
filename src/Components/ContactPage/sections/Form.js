@@ -1,11 +1,26 @@
 import React, { useState } from 'react';
 
 const Form = () => {
-  const [val, setVal] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    console.log(name, email, subject, message);
+  };
 
-  const handleChange = () => {};
+  const handleChange = (event) => {
+    if (event.currentTarget.name === 'name') {
+      setName(event.currentTarget.value);
+    } else if (event.currentTarget.name === 'email') {
+      setEmail(event.currentTarget.value);
+    } else if (event.currentTarget.name === 'subject') {
+      setSubject(event.currentTarget.value);
+    } else if (event.currentTarget.name === 'message') {
+      setMessage(event.currentTarget.value);
+    }
+  };
 
   return (
     <form className='Container-form' onSubmit={handleSubmit}>
@@ -16,7 +31,7 @@ const Form = () => {
             name='name'
             type='text'
             placeholder='Name'
-            value={val}
+            value={name}
             onChange={handleChange}
           />
         </div>
@@ -26,8 +41,9 @@ const Form = () => {
             name='email'
             type='email'
             placeholder='Email'
-            value={val}
+            value={email}
             onChange={handleChange}
+            required
           />
         </div>
       </div>
@@ -37,17 +53,17 @@ const Form = () => {
           name='subject'
           type='text'
           placeholder='Subject'
-          value={val}
+          value={subject}
           onChange={handleChange}
         />
       </div>
       <div className='Input-container-form'>
-        <input
+        <textarea
           className='Input-form-message'
           name='message'
           type='text'
           placeholder='Message'
-          value={val}
+          value={message}
           onChange={handleChange}
         />
       </div>
