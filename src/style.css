@@ -812,3 +812,183 @@
     width: fit-content;
   }
 }
+
+/* Contact Page */
+
+.Background-contact-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Content-contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.Map-contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .Background-contact-page {
+    flex-direction: column;
+  }
+
+  .Content-contact-page {
+    width: 80%;
+  }
+}
+
+.Title-contact-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 3rem;
+}
+
+.Text-animated-contact-page {
+  font-weight: 700;
+  color: #08fdd8;
+}
+
+.Text-animated-contact-page:hover {
+  animation-name: animation;
+  animation-duration: 2s;
+  cursor: default;
+}
+
+.Blurb-contact-page {
+  color: white;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+/* Form css */
+
+textarea,
+input {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.Container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Name-email-container {
+  display: flex;
+}
+
+.Input-form {
+  width: 100%;
+  border: 0;
+  background: #363636;
+  height: 3rem;
+  font-size: 1rem;
+  color: #8d8d8d;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.Input-form:focus {
+  transition: all 0.5s;
+  border-bottom: 0.3rem solid #08fdd8;
+}
+
+/* .Input-form:invalid {
+  transition: all 0.5s;
+  border-bottom: 0.3rem solid red;
+} */
+
+.Input-form-message {
+  width: 100%;
+  border: 0;
+  background: #363636;
+  font-size: 1rem;
+  height: 6rem;
+  color: #8d8d8d;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.Input-form-message:focus {
+  transition: all 0.5s;
+  border-bottom: 0.2rem solid #08fdd8;
+}
+
+.Input-container-form {
+  width: 100%;
+  margin: 0.2rem 0.1rem;
+}
+
+.Submit-button-form {
+  align-self: flex-end;
+  background-color: #262626;
+  font-size: 1rem;
+  color: #08fdd8;
+  border: solid #08fdd8 1px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.Submit-loading-form {
+  align-self: flex-end;
+  background-color: #262626;
+  font-size: 1rem;
+  color: #08fdd8;
+  border: solid #08fdd8 1px;
+  padding: 0.92rem 0.5rem;
+  cursor: wait;
+  margin-top: 2rem;
+}
+
+.Submit-button-form:hover {
+  background-color: #08fdd8;
+  color: #262626;
+}
+
+/* Notification Page */
+
+.Processing-notification {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 30px 50px 5px 30px;
+}
+
+.Failed-notification {
+  background-color: #fd082d;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 30px 50px 5px 30px;
+}
+
+.Success-notification {
+  background-color: #08fdd8;
+  color: black;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 30px 30px 5px 30px;
+}
+
+.Close-button-notifcation {
+  position: fixed;
+  top: 6px;
+  right: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
