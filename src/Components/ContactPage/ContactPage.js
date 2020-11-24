@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Form from './sections/Form';
-// import Map from './sections/Map';
 
 const ContactPage = () => {
   return (
@@ -31,7 +29,7 @@ const ContactPage = () => {
           <Form />
         </div>
       </div>
-      <div className='Map-contact-page'>map</div>
+      <div className='Map-contact-page'></div>
     </div>
   );
 };

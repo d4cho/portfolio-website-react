@@ -943,6 +943,17 @@ input {
   margin-top: 2rem;
 }
 
+.Submit-loading-form {
+  align-self: flex-end;
+  background-color: #262626;
+  font-size: 1rem;
+  color: #08fdd8;
+  border: solid #08fdd8 1px;
+  padding: 0.92rem 0.5rem;
+  cursor: wait;
+  margin-top: 2rem;
+}
+
 .Submit-button-form:hover {
   background-color: #08fdd8;
   color: #262626;
