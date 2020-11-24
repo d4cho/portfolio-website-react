@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Form from './sections/Form';
+import Notification from './sections/Notification';
 
 const ContactPage = () => {
+  const [notificationStatus, setNotificationStatus] = useState('');
+  const handleNotification = (status) => {
+    console.log('status', status);
+    setNotificationStatus(status);
+  };
+
   return (
     <div className='Background-contact-page'>
       <div className='Content-contact-page'>
@@ -26,10 +33,12 @@ const ContactPage = () => {
           don't hesitate to contact me using the form below.
         </p>
         <div>
-          <Form />
+          <Form refreshFunction={handleNotification} />
         </div>
       </div>
-      <div className='Map-contact-page'></div>
+      <div className='Map-contact-page'>
+        <Notification status={notificationStatus} />
+      </div>
     </div>
   );
 };

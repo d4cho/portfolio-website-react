@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import apiKeys from '../../../API_KEYS';
 import BarLoader from 'react-spinners/BarLoader';
 
-const Form = () => {
+const Form = (props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -29,9 +29,12 @@ const Form = () => {
           setSubject('');
           setMessage('');
           setIsLoading(false);
+          props.refreshFunction('success');
         },
         (error) => {
           console.log('error', error.text);
+          setIsLoading(false);
+          props.refreshFunction('failed');
         }
       );
   };
