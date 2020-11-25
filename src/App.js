@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 
 import { useTransition, animated } from 'react-spring';
@@ -21,39 +21,32 @@ function App() {
   });
 
   return (
-    // <BrowserRouter>
     <>
       <Sidebar />
-      {transitions.map(({ item, props, key }) => (
-        <animated.div
-          key={key}
-          style={{
-            ...props,
-            position: 'absolute',
-            height: '100%',
-            width: '100%'
-          }}>
-          {console.log(props)}
-          <Switch location={item}>
-            <Route exact path='/' component={HomePage} />
-            <Route exact path='/about' component={AboutPage} />
-            <Route exact path='/skills' component={SkillsPage} />
-            <Route exact path='/projects' component={ProjectsPage} />
-            <Route exact path='/contact' component={ContactPage} />
-            <Route exact path='/loading' component={LoadingPage} />
-          </Switch>
-        </animated.div>
-      ))}
+      {transitions.map(({ item, props, key }, idx) => {
+        if (true)
+          return (
+            <animated.div
+              key={key}
+              style={{
+                ...props,
+                position: 'absolute',
+                width: '100%',
+                height: '100%'
+              }}>
+              {console.log(props, location, idx)}
+              <Switch location={item}>
+                <Route exact path='/' component={HomePage} />
+                <Route exact path='/about' component={AboutPage} />
+                <Route exact path='/skills' component={SkillsPage} />
+                <Route exact path='/projects' component={ProjectsPage} />
+                <Route exact path='/contact' component={ContactPage} />
+                <Route exact path='/loading' component={LoadingPage} />
+              </Switch>
+            </animated.div>
+          );
+      })}
     </>
-    /* <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/about' component={AboutPage} />
-        <Route exact path='/skills' component={SkillsPage} />
-        <Route exact path='/projects' component={ProjectsPage} />
-        <Route exact path='/contact' component={ContactPage} />
-        <Route exact path='/loading' component={LoadingPage} />
-      </Switch> */
-    // </BrowserRouter>
   );
 }
 

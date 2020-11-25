@@ -50,7 +50,7 @@ const SkillsGraph = (props) => {
             options={{
               ...itemProps.options,
               fillStyle: activeIndex === index ? 'solid' : 'hachure',
-              roughness: activeIndex === index ? 1 : 7
+              roughness: activeIndex === index ? 1 : 2
             }}
             onMouseOut={() => setIndex(-1)}
           />

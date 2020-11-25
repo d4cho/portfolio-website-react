@@ -28,9 +28,9 @@ const ContactPage = () => {
           Feel free to{' '}
           <a href='mailto:danielcho91@gmail.com' style={{ color: '#08fdd8' }}>
             email me
-          </a>{' '}
-          or call me at 647-323-1202. If you have other requests or questions,
-          don't hesitate to contact me using the form below.
+          </a>
+          . If you have other requests or questions, don't hesitate to contact
+          me using the form below.
         </p>
         <div>
           <Form refreshFunction={handleNotification} />
