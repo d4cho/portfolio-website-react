@@ -133,7 +133,7 @@
 
 .Background {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -156,12 +156,21 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 3rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
 }
 
 @media (max-width: 960px) {
   .Main {
-    margin-top: 4rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .Main {
+    margin-top: 16rem;
+    margin-left: 3rem;
   }
 }
 
@@ -732,8 +741,10 @@
 /* Skills Page */
 .Background-skills-page {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 10rem;
+  margin-top: 5rem;
 }
 
 .Main-skills-page {
@@ -741,7 +752,6 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 3rem;
   width: 24rem;
 }
 
@@ -780,8 +790,8 @@
 
 @media (max-width: 960px) {
   .Main-skills-page {
-    margin-top: 1rem;
-    margin-left: 0;
+    margin-top: 3rem;
+    margin-left: 5rem;
     width: 100%;
   }
 
@@ -793,7 +803,7 @@
   .Chart-skills-page {
     width: 25rem;
     height: 15rem;
-    margin-left: 0rem;
+    margin-left: -1rem;
     margin-top: 2rem;
   }
 
@@ -813,6 +823,30 @@
   }
 }
 
+@media (max-width: 600px) {
+  .Chart-skills-page {
+    width: 20rem;
+    height: 10rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .Main-skills-page {
+    margin-top: 11rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .Chart-skills-page {
+    width: 25rem;
+    height: 15rem;
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+}
+
 /* Contact Page */
 
 .Background-contact-page {
@@ -829,6 +863,8 @@
   width: 50%;
   padding: 2rem;
   box-sizing: border-box;
+  margin-left: 8rem;
+  margin-top: 5rem;
 }
 
 .Map-contact-page {
@@ -846,7 +882,35 @@
   }
 
   .Content-contact-page {
+    margin-top: 1rem;
     width: 80%;
+  }
+
+  .Map-contact-page {
+    padding: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .Background-contact-page {
+    flex-direction: column;
+  }
+
+  .Content-contact-page {
+    margin-top: 6rem;
+    margin-left: 1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .Background-contact-page {
+    flex-direction: column;
+  }
+
+  .Content-contact-page {
+    margin-top: 14rem;
+    margin-left: 0rem;
   }
 }
 

@@ -24,7 +24,7 @@ const Notification = (props) => {
 
   const transitions = useTransition(show, null, {
     from: { transform: 'translate3d(500px,0,0)' },
-    enter: { transform: 'translate3d(-100px,0px,0)' },
+    enter: { transform: 'translate3d(0px,0px,0)' },
     leave: { transform: 'translate3d(500px,0,0)' }
   });
 
