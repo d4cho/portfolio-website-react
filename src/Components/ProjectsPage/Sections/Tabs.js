@@ -22,7 +22,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          project 1
+          Workout Social Site
         </div>
         <div
           onClick={tabClickedHandler}
@@ -32,7 +32,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          project 2
+          OP.GG Clone (League of Legends)
         </div>
         <div
           onClick={tabClickedHandler}
@@ -42,7 +42,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          project 3
+          2048 Game Clone
         </div>
         <div
           onClick={tabClickedHandler}
@@ -52,7 +52,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          project 4
+          Catan Card Tracker
         </div>
         <div
           onClick={tabClickedHandler}
@@ -62,7 +62,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          project 5
+          Tic Tac Toe
         </div>
       </div>
       <div className='Projects-parent-project-page'>
