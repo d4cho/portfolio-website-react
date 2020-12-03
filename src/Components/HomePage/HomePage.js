@@ -9,20 +9,20 @@ const HomePage = () => {
           <span className='Greeting-child'>
             <span className='Text-animated'>H</span>
             <span className='Text-animated'>i</span>
-            <span className='Text-animated-special'>,</span>
+            <span className='Text-animated'>,</span>
           </span>
           <span className='Greeting-child'>
             <span className='Text-animated'>I</span>
-            <span className='Text-animated-special'>'</span>
+            <span className='Text-animated'>'</span>
             <span className='Text-animated'>m</span>
             <span className='Text-animated'>&nbsp;</span>
-            <span className='Text-animated-special'>D</span>
+            <span className='Text-animated'>D</span>
             <span className='Text-animated'>a</span>
             <span className='Text-animated'>n</span>
             <span className='Text-animated'>i</span>
             <span className='Text-animated'>e</span>
             <span className='Text-animated'>l</span>
-            <span className='Text-animated-special'>,</span>
+            <span className='Text-animated'>,</span>
           </span>
           <span className='Greeting-child'>
             <span className='Text-animated'>w</span>
@@ -38,7 +38,7 @@ const HomePage = () => {
             <span className='Text-animated'>p</span>
             <span className='Text-animated'>e</span>
             <span className='Text-animated'>r</span>
-            <span className='Text-animated-special'>.</span>
+            <span className='Text-animated'>.</span>
           </span>
         </div>
         <br />

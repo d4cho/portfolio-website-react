@@ -1062,3 +1062,61 @@ input {
   background-color: transparent;
   color: black;
 }
+
+/* Project Page */
+.Container-project-page {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+.Projects-parent-project-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Greeting-child-project-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 3rem;
+}
+
+.flipping-pic {
+  background-size: cover;
+  position: absolute;
+  max-width: 20rem;
+  max-height: 15rem;
+  width: 50ch;
+  height: 50ch;
+  cursor: pointer;
+  will-change: transform, opacity;
+  padding: 1rem;
+}
+
+.img {
+  max-width: 20rem;
+  max-height: 15rem;
+  width: 50ch;
+  height: 50ch;
+}
+
+.tabs-container {
+  display: flex;
+  border-bottom: 1px solid #08fdd8;
+}
+
+.tabs-container div {
+  color: #08fdd8;
+  border-left: 1px solid #08fdd8;
+  border-top: 1px solid #08fdd8;
+  border-right: 1px solid #08fdd8;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+
+.tabs-container div:hover {
+  color: black;
+  background-color: #08fdd8;
+}
