@@ -12,7 +12,7 @@ const Tabs = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ marginTop: '1rem' }}>
       <div className='tabs-container'>
         <div
           onClick={tabClickedHandler}
