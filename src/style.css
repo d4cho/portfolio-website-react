@@ -1121,6 +1121,21 @@ input {
   background-color: #08fdd8;
 }
 
+.Description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 28rem;
+  background-color: #181818;
+  color: #a5a5a5;
+}
+
+.Description-container div {
+  padding: 1rem 1rem;
+}
+
 @media (max-width: 960px) {
   .Container-project-page {
     margin-left: 3rem;
@@ -1133,6 +1148,11 @@ input {
   }
 
   .img {
+    width: 95%;
+    height: auto;
+  }
+
+  .Description-container {
     width: 95%;
     height: auto;
   }

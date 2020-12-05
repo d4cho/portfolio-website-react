@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useSpring, animated as a } from 'react-spring';
 
+import DescriptionCard from './DescriptionCard';
+
 const ProjectCard = (props) => {
   console.log(props.image);
   const [flipped, setFlipped] = useState(false);
@@ -24,7 +26,13 @@ const ProjectCard = (props) => {
           opacity,
           transform: transform.interpolate((t) => `${t} rotateX(180deg)`)
         }}>
-        <div style={{ backgroundColor: 'white' }}>explanation and link</div>
+        <DescriptionCard
+          title={props.title}
+          date={props.date}
+          description={props.description}
+          purpose={props.purpose}
+          link={props.link}
+        />
       </a.div>
     </div>
   );

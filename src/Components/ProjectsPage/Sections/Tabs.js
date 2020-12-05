@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
 const Tabs = (props) => {
-  console.log(props);
-
   const [activeTab, setActiveTab] = useState(1);
 
   const tabClickedHandler = (event) => {
@@ -66,7 +64,14 @@ const Tabs = (props) => {
         </div>
       </div>
       <div className='Projects-parent-project-page'>
-        <ProjectCard image={props.images[activeTab - 1]} />
+        <ProjectCard
+          image={props.info[activeTab - 1].image}
+          title={props.info[activeTab - 1].title}
+          date={props.info[activeTab - 1].date}
+          description={props.info[activeTab - 1].description}
+          purpose={props.info[activeTab - 1].purpose}
+          link={props.info[activeTab - 1].link}
+        />
       </div>
     </div>
   );
