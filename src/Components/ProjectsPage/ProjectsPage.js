@@ -22,7 +22,7 @@ const IMAGES_AND_INFO = [
     title: 'OP.GG Clone',
     date: 'June 2020',
     description:
-      'Clone of a popular statistics website for the game, League of Legends.',
+      'Clone of a popular statistics website for the game, League of Legends. Search for "Wire Cutter" to check out in-game stats.',
     purpose:
       'The purpose of this project was to learn how to use public APIs, promise based HTTP requests, and implement a backend server.',
     link: 'https://floating-eyrie-52053.herokuapp.com/'
