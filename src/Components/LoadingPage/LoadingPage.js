@@ -10,7 +10,7 @@ const LoadingPage = () => {
   });
 
   return (
-    <div className='Background'>
+    <div style={{ paddingTop: '8rem' }}>
       <div className='Container' id='loading'>
         <div className='Items'>
           <img src={logo} style={{ width: '150px' }} />
