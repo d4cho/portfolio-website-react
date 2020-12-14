@@ -26,8 +26,8 @@ const data = [
   },
   {
     name: 'HTML',
-    x: 2,
-    level: 'Beginner'
+    x: 3,
+    level: 'Intermediate'
   }
 ];
 

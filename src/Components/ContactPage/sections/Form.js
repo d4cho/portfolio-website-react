@@ -23,7 +23,6 @@ const Form = (props) => {
       )
       .then(
         (result) => {
-          console.log('result', result.text);
           setName('');
           setEmail('');
           setSubject('');
@@ -32,7 +31,6 @@ const Form = (props) => {
           props.refreshFunction('success');
         },
         (error) => {
-          console.log('error', error.text);
           setIsLoading(false);
           props.refreshFunction('failed');
         }

@@ -4,7 +4,6 @@ import { useSpring, animated as a } from 'react-spring';
 import DescriptionCard from './DescriptionCard';
 
 const ProjectCard = (props) => {
-  console.log(props.image);
   const [flipped, setFlipped] = useState(false);
 
   const { transform, opacity } = useSpring({

@@ -34,7 +34,6 @@ function App() {
                 width: '100%',
                 height: '100%'
               }}>
-              {console.log(props, location, idx)}
               <Switch location={item}>
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/about' component={AboutPage} />

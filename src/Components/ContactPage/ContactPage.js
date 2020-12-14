@@ -5,7 +5,6 @@ import Notification from './sections/Notification';
 const ContactPage = () => {
   const [notificationStatus, setNotificationStatus] = useState('');
   const handleNotification = (status) => {
-    console.log('status', status);
     setNotificationStatus(status);
   };
 
