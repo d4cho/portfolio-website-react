@@ -12,6 +12,10 @@ import ProjectsPage from './Components/ProjectsPage/ProjectsPage';
 import ContactPage from './Components/ContactPage/ContactPage';
 import LoadingPage from './Components/LoadingPage/LoadingPage';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('173129831');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
   const location = useLocation();
   const transitions = useTransition(location, (location) => location.pathname, {
