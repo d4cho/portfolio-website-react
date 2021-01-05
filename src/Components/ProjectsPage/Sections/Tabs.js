@@ -60,7 +60,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Tic Tac Toe
+          Vue Bucket List
         </div>
       </div>
       <div className='Projects-parent-project-page'>

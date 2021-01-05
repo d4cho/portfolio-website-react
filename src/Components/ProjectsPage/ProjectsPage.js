@@ -3,7 +3,7 @@ import workoutPic from '../../Assets/workout.png';
 import twentyFortyEightPic from '../../Assets/2048.png';
 import catanPic from '../../Assets/catan.png';
 import opggPic from '../../Assets/opgg.png';
-import tttPic from '../../Assets/ttt.JPG';
+import vueBucketList from '../../Assets/vue_bucketlist.png';
 
 import Tabs from './Sections/Tabs';
 
@@ -46,12 +46,12 @@ const IMAGES_AND_INFO = [
     link: 'https://infinite-fjord-57078.herokuapp.com/'
   },
   {
-    image: tttPic,
-    title: 'Tic Tac Toe',
-    date: 'April 2020',
-    description: 'Simple tic-tac-toe game. My first project using React.',
+    image: vueBucketList,
+    title: 'Mini Bucket List App',
+    date: 'January 2021',
+    description: 'A Simple bucket list app created with Vue.js and Express',
     purpose: '',
-    link: 'https://intense-springs-55875.herokuapp.com/'
+    link: 'https://mevn-simple-bucket-list-app.herokuapp.com/'
   }
 ];
 
