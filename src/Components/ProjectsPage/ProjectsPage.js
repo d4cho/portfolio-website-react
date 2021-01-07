@@ -1,7 +1,7 @@
 import React from 'react';
 import workoutPic from '../../Assets/workout.png';
 import twentyFortyEightPic from '../../Assets/2048.png';
-import catanPic from '../../Assets/catan.png';
+import apex from '../../Assets/apex.png';
 import opggPic from '../../Assets/opgg.png';
 import vueBucketList from '../../Assets/vue_bucketlist.png';
 
@@ -37,13 +37,13 @@ const IMAGES_AND_INFO = [
     link: 'https://limitless-earth-37528.herokuapp.com/'
   },
   {
-    image: catanPic,
-    title: 'Catan Card Tracker',
-    date: 'April 2020',
-    description:
-      'React application to track resource cards and development cards in a popular board game, Catan',
-    purpose: '',
-    link: 'https://infinite-fjord-57078.herokuapp.com/'
+    image: apex,
+    title: 'Apex Stats Tracker',
+    date: 'January 2021',
+    description: 'Vue application using public API to track Apex player stats.',
+    purpose:
+      'Search Platform: Playstation, Gamertag: ShamR0cks978 to see stats.',
+    link: 'https://apex-legend-stats-tracker-vue.herokuapp.com/'
   },
   {
     image: vueBucketList,

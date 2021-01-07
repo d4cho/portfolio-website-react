@@ -50,7 +50,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Catan Card Tracker
+          Apex Stats Tracker
         </div>
         <div
           onClick={tabClickedHandler}
