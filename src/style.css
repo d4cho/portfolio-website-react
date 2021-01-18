@@ -1096,6 +1096,7 @@ input {
 .img {
   width: 50rem;
   height: 28rem;
+  object-fit: contain;
 }
 
 .tabs-container {
