@@ -20,7 +20,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Workout Social Site
+          Point-Of-Sales App
         </div>
         <div
           onClick={tabClickedHandler}
@@ -30,7 +30,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          OP.GG Clone (League of Legends)
+          Workout Social Site
         </div>
         <div
           onClick={tabClickedHandler}
@@ -40,7 +40,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          2048 Game Clone
+          OP.GG Clone (League of Legends)
         </div>
         <div
           onClick={tabClickedHandler}
@@ -50,7 +50,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Apex Stats Tracker
+          2048 Game Clone
         </div>
         <div
           onClick={tabClickedHandler}
@@ -60,7 +60,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Vue Bucket List
+          Apex Stats Tracker
         </div>
       </div>
       <div className='Projects-parent-project-page'>

@@ -3,11 +3,20 @@ import workoutPic from '../../Assets/workout.png';
 import twentyFortyEightPic from '../../Assets/2048.png';
 import apex from '../../Assets/apex.png';
 import opggPic from '../../Assets/opgg.png';
-import vueBucketList from '../../Assets/vue_bucketlist.png';
+import pocolocopos from '../../Assets/pocolocopos.png';
 
 import Tabs from './Sections/Tabs';
 
 const IMAGES_AND_INFO = [
+  {
+    image: pocolocopos,
+    title: 'POS app (work in progress)',
+    date: 'January 2021',
+    description:
+      'A POS system designed to handle transactions and check inventory for businesses.',
+    purpose: '',
+    link: 'https://pocoloco-pos.herokuapp.com/'
+  },
   {
     image: workoutPic,
     title: 'Workout Social Site',
@@ -44,14 +53,6 @@ const IMAGES_AND_INFO = [
     purpose:
       'Search Platform: Playstation, Gamertag: ShamR0cks978 to see stats.',
     link: 'https://apex-legend-stats-tracker-vue.herokuapp.com/'
-  },
-  {
-    image: vueBucketList,
-    title: 'Mini Bucket List App',
-    date: 'January 2021',
-    description: 'A Simple bucket list app created with Vue.js and Express',
-    purpose: '',
-    link: 'https://mevn-simple-bucket-list-app.herokuapp.com/'
   }
 ];
 

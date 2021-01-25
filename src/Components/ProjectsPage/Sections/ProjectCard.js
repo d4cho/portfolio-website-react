@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
       <a.div
         className='flipping-pic'
         style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}>
-        <img className='img' src={props.image} />
+        <img className='img' src={props.image} alt='img' />
       </a.div>
       <a.div
         className='flipping-pic'
