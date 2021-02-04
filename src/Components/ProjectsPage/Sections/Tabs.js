@@ -20,7 +20,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Point-Of-Sales App
+          EXP|CON
         </div>
         <div
           onClick={tabClickedHandler}
@@ -30,7 +30,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          Workout Social Site
+          POCOLOCO POS
         </div>
         <div
           onClick={tabClickedHandler}
@@ -40,7 +40,7 @@ const Tabs = (props) => {
               ? { color: 'black', backgroundColor: '#08fdd8' }
               : null
           }>
-          OP.GG Clone (League of Legends)
+          Workout Social App
         </div>
         <div
           onClick={tabClickedHandler}

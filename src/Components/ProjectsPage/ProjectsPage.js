@@ -4,10 +4,20 @@ import twentyFortyEightPic from '../../Assets/2048.png';
 import apex from '../../Assets/apex.png';
 import opggPic from '../../Assets/opgg.png';
 import pocolocopos from '../../Assets/pocolocopos.png';
+import expcon from '../../Assets/expcon.png';
 
 import Tabs from './Sections/Tabs';
 
 const IMAGES_AND_INFO = [
+  {
+    image: expcon,
+    title: 'Experience Live Concerts',
+    date: 'February 2021',
+    description:
+      'Front-end project to showcase an app for live concert experiences.',
+    purpose: '',
+    link: 'https://exp-con-speer.herokuapp.com/'
+  },
   {
     image: pocolocopos,
     title: 'POS app (work in progress)',
@@ -23,19 +33,11 @@ const IMAGES_AND_INFO = [
     date: 'September 2020',
     description:
       'Social media website to share anything workout related; an application to track and analyze workouts.',
-    purpose: 'React application using MERN stack.',
+    purpose:
+      'This is a full-stack application using React, Node, Express, and MongoDB.',
     link: 'https://pure-lowlands-51212.herokuapp.com/'
   },
-  {
-    image: opggPic,
-    title: 'OP.GG Clone',
-    date: 'June 2020',
-    description:
-      'Clone of a popular statistics website for the game, League of Legends. Search for "Wire Cutter" to check out in-game stats.',
-    purpose:
-      'The purpose of this project was to learn how to use public APIs, promise based HTTP requests, and implement a backend server.',
-    link: 'https://floating-eyrie-52053.herokuapp.com/'
-  },
+
   {
     image: twentyFortyEightPic,
     title: '2048 Game Clone',
